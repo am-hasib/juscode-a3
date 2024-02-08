@@ -1,0 +1,121 @@
+
+.testimonials__title {
+  font-size: var(--size-2xl);
+  margin: 0 auto;
+  padding: 0px 1rem;
+  text-align: center;
+}
+.testimonials__description {
+  max-width: 60ch;
+  text-align: center;
+  padding: 0px 1rem;
+  margin: 0 auto;
+}
+.testimonials__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0rem auto;
+  padding: 2rem 0;
+  width: 100%;
+}
+.testimonials__cards-single {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  border: 2px solid var(--clr-rose);
+  box-shadow: 6px 6px 40px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+.testimonials__cards-single:hover {
+  transform: translateY(-2px);
+  box-shadow: 6px 6px 80px rgba(0, 0, 0, 0.2);
+}
+.testimonials__user {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonials__user-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.testimonials__user-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.testimonials__user-img img {
+  height: 100%;
+  width: 100%;
+}
+.testimonials__user-info {
+  display: flex;
+  flex-direction: column;
+}
+.testimonials__user-rating {
+  display: flex;
+  align-items: center;
+}
+.testimonials__user-star {
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
+
+.testimonials__user-rate {
+  height: 100%;
+  width: 100%;
+  display: block;
+  color: var(-clr-dblue);
+}
+.testimonials__user-star svg {
+  color: var(--clr-yellow);
+}
+/* xs */
+/* @media (min-width:475px){} */
+
+/* sm */
+@media (min-width: 640px) {
+  .testimonials__cards {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+  .testimonials__cards-single {
+    min-width: 65%;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .testimonials__cards-single {
+    min-width: 55%;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .testimonials__cards-single {
+    min-width: 45%;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .testimonials__cards {
+    margin-top: 5rem;
+  }
+  .testimonials__cards-single {
+    min-width: 30%;
+  }
+}
+
+/* 2xl */
+/* @media (min-width:1536px){} */
